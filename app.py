@@ -1,15 +1,11 @@
-from flask import Flask
-from flask_restx import Api, Resource, fields
-from werkzeug.middleware.proxy_fix import ProxyFix
+from flask import Flask 
+from flask_restx import Api 
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
-api = Api(
-        app, 
-        version='1.0', 
-        title='TodoMVC API',
-        description='A simple TodoMVC API',
-        )
+api = Api(app, version='1.0', title='TodoMVC API',
+    description='A simple TodoMVC API',
+)
 
 ns = api.namespace('todos', description='TODO operations')
 
@@ -17,6 +13,9 @@ todo = api.model('Todo', {
     'id': fields.Integer(readonly=True, description='The task unique identifier'),
     'task': fields.String(required=True, description='The task details')
 })
+
+
+
 
 
 class TodoDAO(object):
@@ -50,6 +49,7 @@ DAO = TodoDAO()
 DAO.create({'task': 'Build an API'})
 DAO.create({'task': '?????'})
 DAO.create({'task': 'profit!'})
+
 
 
 @ns.route('/')
@@ -96,5 +96,6 @@ class Todo(Resource):
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
-    
+
+
+
