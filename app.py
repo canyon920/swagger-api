@@ -4,9 +4,12 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
-api = Api(app, version='1.0', title='TodoMVC API',
-    description='A simple TodoMVC API',
-)
+api = Api(
+        app, 
+        version='1.0', 
+        title='TodoMVC API',
+        description='A simple TodoMVC API',
+        )
 
 ns = api.namespace('todos', description='TODO operations')
 
@@ -93,3 +96,5 @@ class Todo(Resource):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
+    
