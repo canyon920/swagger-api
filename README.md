@@ -1,20 +1,20 @@
 # Swagger API
 ```
-# 개발환경  <br />
-  OS = Windows 10 <br />
-  DB = Maria DB <br />
+# 개발환경 
+  OS = Windows 10 
+  DB = Maria DB
   
-  Backend Language(): <br />
-    if Python 3.7 == "ok" &&  <br />
-       Framework = Flask 2.1.2  <br />
-    Backend Language.run() <br />
+  Backend Language(): 
+    if Python 3.7 == "ok" &&  
+       Framework = Flask 2.1.2  
+    Backend Language.run()
     <br />
-  Frontend Language(): <br />
-    if VUE 2 == "ok" <br />
-       Framework = nodemoudle.Quasar <br /> 
-    npm start    <br /><br />
+  Frontend Language(): 
+    if VUE 2 == "ok" 
+       Framework = nodemoudle.Quasar 
+    npm start
     
-  IDE = JetBrain PyCharm 22.01 <br />
+  IDE = JetBrain PyCharm 22.01
   IDE = JetBrain IntelliJ 22.01
  
 
