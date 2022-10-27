@@ -8,14 +8,14 @@
   
   
   Backend Language(): 
-    if Python 3.7 == "ok" &&  
-       Framework = Flask 2.1.2  
+    if Python 3.7 == "ok"  
+    if Framework == Flask 2.1.2 ? ok : "flase"  
     Backend Language.run()
   
   
   Frontend Language(): 
-    if VUE 2 == "ok" 
-       Framework = nodemoudle.Quasar 
+    if VUE 2 == "ok
+    if Framework = nodemoudle.Quasar 
     npm start
   
   
