@@ -20,5 +20,5 @@
   
   
   IDE = JetBrain PyCharm 22.01
-  IDE = JetBrain IntelliJ 22.01
+  IDE = JetBrain Intelli J 22.01
 ```
