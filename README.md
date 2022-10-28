@@ -9,7 +9,7 @@
   
   Backend Language(): 
     if Python 3.7 == "ok"  
-    if Framework == Flask 2.1.2 ? ok : "flase"  
+    if Framework == Flask 2.1.2 ? "OK" : "flase"  
     Backend Language.run()
   
   
