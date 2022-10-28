@@ -19,7 +19,7 @@
     npm start
   
   
-  [Professional Tool]
+  [Professional Licence]
   
   IDE = JetBrain PyCharm 22.01
   IDE = JetBrain Intelli J 22.01
